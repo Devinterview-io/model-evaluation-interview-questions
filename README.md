@@ -256,16 +256,9 @@ The F1 score is the harmonic mean of precision and recall, offering a balanced a
 
 For multi-class classification, the Confusion Matrix extends to a square matrix with dimensions equal to the number of classes. Each row and column now correspond to a unique class, and the matrix visually summarizes true and false classifications for each class.
 
- For $N$ classes or categories:
+For $N$ classes or categories:
  
-$$
-\text{CM} = \begin{bmatrix}
-\text{TP}_{1} & \text{FP}_{1} & \ldots & \text{FP}_{N-1} \\
-\text{FN}_{1} & \text{TP}_{2} & \ddots & \vdots \\
-\vdots & \ddots & \ddots & \text{FP}_{N-1} \\
-\text{FN}_{N} & \ldots & \ldots & \text{TP}_{N}
-\end{bmatrix}
-$$
+![equation](https://latex.codecogs.com/gif.latex?%5Ctext%7BCM%7D%20%3D%20%5Cbegin%7Bbmatrix%7D%20%5Ctext%7BTP%7D_%7B1%7D%20%26%20%5Ctext%7BFP%7D_%7B1%7D%20%26%20%5Cldots%20%26%20%5Ctext%7BFP%7D_%7BN-1%7D%20%5C%5C%20%5Ctext%7BFN%7D_%7B1%7D%20%26%20%5Ctext%7BTP%7D_%7B2%7D%20%26%20%5Cddots%20%26%20%5Cvdots%20%5C%5C%20%5Cvdots%20%26%20%5Cddots%20%26%20%5Cddots%20%26%20%5Ctext%7BFP%7D_%7BN-1%7D%20%5C%5C%20%5Ctext%7BFN%7D_%7BN%7D%20%26%20%5Cldots%20%26%20%5Cldots%20%26%20%5Ctext%7BTP%7D_%7BN%7D%20%5Cend%7Bbmatrix%7D)
 
 The sum of each row gives the total number of true instances for the corresponding class, while the sum of the columns provides the total number of instances predicted for each class.
 
@@ -560,14 +553,13 @@ where:
 
 **R-squared** provides a measure of how well the independent variables (features) explain the variability in the dependent variable, $Y$. It is calculated as:
 
-$$
-R^2 = 1 - \frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}}
-$$
+![equation](https://latex.codecogs.com/gif.latex?R^2&space;=&space;1&space;-&space;\frac{\text{SS}_{\text{res}}}{\text{SS}_{\text{tot}}})
 
 where:
 
-- $\text{SS}_{\text{res}}$ is the sum of squares of residuals, also referred to as unexplained variability.
-- $\text{SS}_{\text{tot}}$ is the total sum of squares, representing the total variability in the dependent variable.
+- ![equation](https://latex.codecogs.com/gif.latex?\text{SS}_{\text{res}}) is the sum of squares of residuals, also referred to as unexplained variability.
+
+- ![equation](https://latex.codecogs.com/gif.latex?\text{SS}_{\text{tot}}) is the total sum of squares, representing the total variability in the dependent variable.
 
 **Advantages**:
 
